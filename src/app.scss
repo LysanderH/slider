@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+}
+
+.header {
+  width: 25%;
+  margin: auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin: auto;
+  &__select {
+
+  }
+
+
+}
+
+.slide {
+  width: 25%;
+  position: relative;
+  margin: auto;
+  &__list {
+
+  }
+
+  &__element {
+    width: 100%;
+    overflow: hidden;
+
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+    //opacity: 0;
+    //transition: opacity 1.5s ease;
+  }
+}
+
+//.shown {
+//  opacity: 1;
+//}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
